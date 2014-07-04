@@ -1,0 +1,17 @@
+READ ME: 
+
+"Connector of Four" is written in Objective-c, and runs on iOS7. 
+iPad is only supported. 
+Portrait is only supported. 
+32bit and 64bit are supported. 
+ARC is disabled.
+
+Xcode is required to compile this application. 
+Please use the simulator, or setup your dev account to deploy on an iPad.
+
+Compile Steps: 
+1) Choose Device
+2) Build and run (command+r)
+3) Enjoy the UI :)
+
+- James D Emrich

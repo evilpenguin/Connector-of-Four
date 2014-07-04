@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		522F7EAB195DFCCA00315F77 /* COFPieceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522F7EAA195DFCCA00315F77 /* COFPieceView.m */; };
+		522F7EAD195E010B00315F77 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 522F7EAC195E010B00315F77 /* board.png */; };
+		52CECE0C195D9AAD005782DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CECE0B195D9AAD005782DF /* Foundation.framework */; };
+		52CECE0E195D9AAD005782DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CECE0D195D9AAD005782DF /* CoreGraphics.framework */; };
+		52CECE10195D9AAD005782DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CECE0F195D9AAD005782DF /* UIKit.framework */; };
+		52CECE25195D9AAD005782DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CECE24195D9AAD005782DF /* XCTest.framework */; };
+		52CECE26195D9AAD005782DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CECE0B195D9AAD005782DF /* Foundation.framework */; };
+		52CECE27195D9AAD005782DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CECE0F195D9AAD005782DF /* UIKit.framework */; };
+		52CECE2F195D9AAD005782DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52CECE2D195D9AAD005782DF /* InfoPlist.strings */; };
+		52CECE45195D9B04005782DF /* COFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CECE3D195D9B04005782DF /* COFAppDelegate.m */; };
+		52CECE47195D9B04005782DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52CECE41195D9B04005782DF /* InfoPlist.strings */; };
+		52CECE48195D9B04005782DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CECE43195D9B04005782DF /* Images.xcassets */; };
+		52CECE49195D9B04005782DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CECE44195D9B04005782DF /* main.m */; };
+		52CECE4F195D9BEC005782DF /* COFBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CECE4E195D9BEC005782DF /* COFBoardViewController.m */; };
+		52CECE52195D9BFD005782DF /* COFBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CECE51195D9BFD005782DF /* COFBoardView.m */; };
+		52CECE59195D9FDD005782DF /* COFBoardEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CECE58195D9FDD005782DF /* COFBoardEngine.m */; };
+		52CECE60195DB9DA005782DF /* board@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CECE5F195DB9DA005782DF /* board@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52CECE28195D9AAD005782DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CECE00195D9AAC005782DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CECE07195D9AAC005782DF;
+			remoteInfo = "Connector of Four";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		522F7EA9195DFCCA00315F77 /* COFPieceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COFPieceView.h; sourceTree = "<group>"; };
+		522F7EAA195DFCCA00315F77 /* COFPieceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COFPieceView.m; sourceTree = "<group>"; };
+		522F7EAC195E010B00315F77 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		52CECE08195D9AAC005782DF /* Connector of Four.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connector of Four.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CECE0B195D9AAD005782DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52CECE0D195D9AAD005782DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52CECE0F195D9AAD005782DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		52CECE23195D9AAD005782DF /* Connector of FourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Connector of FourTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CECE24195D9AAD005782DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		52CECE2C195D9AAD005782DF /* Connector of FourTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Connector of FourTests-Info.plist"; sourceTree = "<group>"; };
+		52CECE2E195D9AAD005782DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52CECE3C195D9B04005782DF /* COFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COFAppDelegate.h; sourceTree = "<group>"; };
+		52CECE3D195D9B04005782DF /* COFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COFAppDelegate.m; sourceTree = "<group>"; };
+		52CECE3F195D9B04005782DF /* Connector of Four-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Connector of Four-Info.plist"; sourceTree = "<group>"; };
+		52CECE40195D9B04005782DF /* Connector of Four-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Connector of Four-Prefix.pch"; sourceTree = "<group>"; };
+		52CECE42195D9B04005782DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52CECE43195D9B04005782DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52CECE44195D9B04005782DF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52CECE4D195D9BEC005782DF /* COFBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COFBoardViewController.h; sourceTree = "<group>"; };
+		52CECE4E195D9BEC005782DF /* COFBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COFBoardViewController.m; sourceTree = "<group>"; };
+		52CECE50195D9BFD005782DF /* COFBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COFBoardView.h; sourceTree = "<group>"; };
+		52CECE51195D9BFD005782DF /* COFBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COFBoardView.m; sourceTree = "<group>"; };
+		52CECE57195D9FDD005782DF /* COFBoardEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COFBoardEngine.h; sourceTree = "<group>"; };
+		52CECE58195D9FDD005782DF /* COFBoardEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COFBoardEngine.m; sourceTree = "<group>"; };
+		52CECE5F195DB9DA005782DF /* board@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "board@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52CECE05195D9AAC005782DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CECE0E195D9AAD005782DF /* CoreGraphics.framework in Frameworks */,
+				52CECE10195D9AAD005782DF /* UIKit.framework in Frameworks */,
+				52CECE0C195D9AAD005782DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CECE20195D9AAD005782DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CECE25195D9AAD005782DF /* XCTest.framework in Frameworks */,
+				52CECE27195D9AAD005782DF /* UIKit.framework in Frameworks */,
+				52CECE26195D9AAD005782DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52CECDFF195D9AAC005782DF = {
+			isa = PBXGroup;
+			children = (
+				52CECE11195D9AAD005782DF /* Connector of Four */,
+				52CECE2A195D9AAD005782DF /* Connector of FourTests */,
+				52CECE0A195D9AAC005782DF /* Frameworks */,
+				52CECE09195D9AAC005782DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52CECE09195D9AAC005782DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE08195D9AAC005782DF /* Connector of Four.app */,
+				52CECE23195D9AAD005782DF /* Connector of FourTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CECE0A195D9AAC005782DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE0B195D9AAD005782DF /* Foundation.framework */,
+				52CECE0D195D9AAD005782DF /* CoreGraphics.framework */,
+				52CECE0F195D9AAD005782DF /* UIKit.framework */,
+				52CECE24195D9AAD005782DF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52CECE11195D9AAD005782DF /* Connector of Four */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE3A195D9B04005782DF /* Assets */,
+				52CECE3B195D9B04005782DF /* Classes */,
+				52CECE3E195D9B04005782DF /* Supporting Files */,
+			);
+			path = "Connector of Four";
+			sourceTree = "<group>";
+		};
+		52CECE2A195D9AAD005782DF /* Connector of FourTests */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE2B195D9AAD005782DF /* Supporting Files */,
+			);
+			path = "Connector of FourTests";
+			sourceTree = "<group>";
+		};
+		52CECE2B195D9AAD005782DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE2C195D9AAD005782DF /* Connector of FourTests-Info.plist */,
+				52CECE2D195D9AAD005782DF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52CECE3A195D9B04005782DF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				522F7EAC195E010B00315F77 /* board.png */,
+				52CECE5F195DB9DA005782DF /* board@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		52CECE3B195D9B04005782DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE3C195D9B04005782DF /* COFAppDelegate.h */,
+				52CECE3D195D9B04005782DF /* COFAppDelegate.m */,
+				52CECE56195D9FCD005782DF /* Engine */,
+				52CECE4B195D9BCE005782DF /* View */,
+				52CECE4C195D9BCE005782DF /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		52CECE3E195D9B04005782DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE3F195D9B04005782DF /* Connector of Four-Info.plist */,
+				52CECE40195D9B04005782DF /* Connector of Four-Prefix.pch */,
+				52CECE41195D9B04005782DF /* InfoPlist.strings */,
+				52CECE43195D9B04005782DF /* Images.xcassets */,
+				52CECE44195D9B04005782DF /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52CECE4B195D9BCE005782DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE50195D9BFD005782DF /* COFBoardView.h */,
+				52CECE51195D9BFD005782DF /* COFBoardView.m */,
+				522F7EA9195DFCCA00315F77 /* COFPieceView.h */,
+				522F7EAA195DFCCA00315F77 /* COFPieceView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52CECE4C195D9BCE005782DF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE4D195D9BEC005782DF /* COFBoardViewController.h */,
+				52CECE4E195D9BEC005782DF /* COFBoardViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		52CECE56195D9FCD005782DF /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				52CECE57195D9FDD005782DF /* COFBoardEngine.h */,
+				52CECE58195D9FDD005782DF /* COFBoardEngine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52CECE07195D9AAC005782DF /* Connector of Four */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CECE34195D9AAD005782DF /* Build configuration list for PBXNativeTarget "Connector of Four" */;
+			buildPhases = (
+				52CECE04195D9AAC005782DF /* Sources */,
+				52CECE05195D9AAC005782DF /* Frameworks */,
+				52CECE06195D9AAC005782DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Connector of Four";
+			productName = "Connector of Four";
+			productReference = 52CECE08195D9AAC005782DF /* Connector of Four.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52CECE22195D9AAD005782DF /* Connector of FourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CECE37195D9AAD005782DF /* Build configuration list for PBXNativeTarget "Connector of FourTests" */;
+			buildPhases = (
+				52CECE1F195D9AAD005782DF /* Sources */,
+				52CECE20195D9AAD005782DF /* Frameworks */,
+				52CECE21195D9AAD005782DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CECE29195D9AAD005782DF /* PBXTargetDependency */,
+			);
+			name = "Connector of FourTests";
+			productName = "Connector of FourTests";
+			productReference = 52CECE23195D9AAD005782DF /* Connector of FourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52CECE00195D9AAC005782DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Emrich;
+				TargetAttributes = {
+					52CECE22195D9AAD005782DF = {
+						TestTargetID = 52CECE07195D9AAC005782DF;
+					};
+				};
+			};
+			buildConfigurationList = 52CECE03195D9AAC005782DF /* Build configuration list for PBXProject "Connector of Four" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52CECDFF195D9AAC005782DF;
+			productRefGroup = 52CECE09195D9AAC005782DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52CECE07195D9AAC005782DF /* Connector of Four */,
+				52CECE22195D9AAD005782DF /* Connector of FourTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52CECE06195D9AAC005782DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522F7EAD195E010B00315F77 /* board.png in Resources */,
+				52CECE60195DB9DA005782DF /* board@2x.png in Resources */,
+				52CECE48195D9B04005782DF /* Images.xcassets in Resources */,
+				52CECE47195D9B04005782DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CECE21195D9AAD005782DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CECE2F195D9AAD005782DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CECE04195D9AAC005782DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CECE52195D9BFD005782DF /* COFBoardView.m in Sources */,
+				52CECE4F195D9BEC005782DF /* COFBoardViewController.m in Sources */,
+				52CECE49195D9B04005782DF /* main.m in Sources */,
+				52CECE59195D9FDD005782DF /* COFBoardEngine.m in Sources */,
+				522F7EAB195DFCCA00315F77 /* COFPieceView.m in Sources */,
+				52CECE45195D9B04005782DF /* COFAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CECE1F195D9AAD005782DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CECE29195D9AAD005782DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CECE07195D9AAC005782DF /* Connector of Four */;
+			targetProxy = 52CECE28195D9AAD005782DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52CECE2D195D9AAD005782DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CECE2E195D9AAD005782DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52CECE41195D9B04005782DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CECE42195D9B04005782DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52CECE32195D9AAD005782DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		52CECE33195D9AAD005782DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52CECE35195D9AAD005782DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connector of Four/Supporting Files/Connector of Four-Prefix.pch";
+				INFOPLIST_FILE = "Connector of Four/Supporting Files/Connector of Four-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52CECE36195D9AAD005782DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connector of Four/Supporting Files/Connector of Four-Prefix.pch";
+				INFOPLIST_FILE = "Connector of Four/Supporting Files/Connector of Four-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		52CECE38195D9AAD005782DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Connector of Four.app/Connector of Four";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connector of Four/Connector of Four-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Connector of FourTests/Connector of FourTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		52CECE39195D9AAD005782DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Connector of Four.app/Connector of Four";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Connector of Four/Connector of Four-Prefix.pch";
+				INFOPLIST_FILE = "Connector of FourTests/Connector of FourTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52CECE03195D9AAC005782DF /* Build configuration list for PBXProject "Connector of Four" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CECE32195D9AAD005782DF /* Debug */,
+				52CECE33195D9AAD005782DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CECE34195D9AAD005782DF /* Build configuration list for PBXNativeTarget "Connector of Four" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CECE35195D9AAD005782DF /* Debug */,
+				52CECE36195D9AAD005782DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CECE37195D9AAD005782DF /* Build configuration list for PBXNativeTarget "Connector of FourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CECE38195D9AAD005782DF /* Debug */,
+				52CECE39195D9AAD005782DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52CECE00195D9AAC005782DF /* Project object */;
+}
